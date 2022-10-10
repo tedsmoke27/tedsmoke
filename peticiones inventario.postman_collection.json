@@ -1,0 +1,378 @@
+{
+	"info": {
+		"_postman_id": "cd43a4e7-1794-4e94-bf4f-b299f16b8e44",
+		"name": "peticiones inventario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23526565"
+	},
+	"item": [
+		{
+			"name": "listar usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nombre\": \"martin caseres\",\r\n\"email\": \"adrianmartin@hotmail.com\",\r\n\"estado\": \"activo\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nombre\":\"camilo\",\r\n\"email\": \"camilo@hotmail.com\"\r\n, \"estado\":\"activo\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar tipo equipo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/tipoEquipo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tipoEquipo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear tipo equipo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"nombre\":\"moviles\",\r\n\"estado\":\"activo\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/tipoEquipo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tipoEquipo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar tipo equipo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"nombre\":\"moviles+\",\r\n\"estado\":\"activo\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/tipoEquipo/6334a1e24ec6020f7a8f70d9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tipoEquipo",
+						"6334a1e24ec6020f7a8f70d9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lista marca",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/marca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"marca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear marca",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nombre\":\"lenovo\",\r\n \"estado\" :\"activo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/marca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"marca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lista estado equipo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/estadoEquipo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"estadoEquipo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear estado equipo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"depreciado\",\r\n    \"estado\":\"activo\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/estadoEquipo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"estadoEquipo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar estado equipo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"en mantenimiento\",\r\n    \"estado\":\"activo\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/estadoEquipo/6334ca0c794cb380e6902d29",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"estadoEquipo",
+						"6334ca0c794cb380e6902d29"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lista inventario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/inventario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"inventario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear inventario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n   { \"modelo\":\"7894+\",\r\n    \"descripcion\":\"movil ace 89\",\r\n    \"color\":\"gris\",\r\n    \"foto\":\"http://foto.net\",\r\n     \"fechaCompra\":\"2019-05-15\",\r\n     \"precio\": 190000 ,\r\n    \"usuario\":{\r\n        \"_id\":\"6333aa668097d70d921eab76\"\r\n    },\r\n    \"marca\":{\r\n        \"_id\":\"63346b81bed2b9379984dcdd\"\r\n    },\r\n    \"tipoEquipo\":{\r\n        \"_id\":\"6334a1f44ec6020f7a8f70db\"\r\n    },\r\n    \"estadoEquipo\":{\r\n        \"_id\":\"63349cdc44116ffdc122c3c8\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/inventario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"inventario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar  inventario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serial\":\"58574\",\r\n    \"modelo\":\"7894+\",\r\n    \"descripcion\":\"movil ace 89\",\r\n    \"color\":\"gris\",\r\n    \"foto\":\"http://foto.net\",\r\n     \"fechaCompra\":\"2019-05-15\",\r\n     \"precio\": 600000 ,\r\n    \"usuario\":{\r\n        \"_id\":\"6333aaa0dc71ba627f312ea4\"\r\n    },\r\n    \"marca\":{\r\n        \"_id\":\"63346b81bed2b9379984dcdd\"\r\n    },\r\n    \"tipoEquipo\":{\r\n        \"_id\":\"6334a1f44ec6020f7a8f70db\"\r\n    },\r\n    \"estadoEquipo\":{\r\n        \"_id\":\"63349d4d44116ffdc122c3cc\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/inventario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"inventario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar marca",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/marca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"marca"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
